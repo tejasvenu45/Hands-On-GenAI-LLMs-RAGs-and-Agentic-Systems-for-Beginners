@@ -1,0 +1,6 @@
+https://finalyzer-1g2f.vercel.app/
+
+Source code:
+https://github.com/tejasvenu45/finalyzer
+
+It is a basic primarily a web dev project designed to use llms in helping with budgetting. 
