@@ -1,5 +1,5 @@
-python -m venv venv
-.\venv\Scripts\Activate
-pip install flask flask-cors
+Ensure python and pip is installed and it can be accessed via the terminal. 
 
-https://apitester-git-main-tejas-venugopalans-projects.vercel.app/
+Run python app.py :) and u are good to go 
+
+you can either use https://apitester-ptuy.vercel.app/ for testing purposes or even install an api-tester application like postman (your call)
