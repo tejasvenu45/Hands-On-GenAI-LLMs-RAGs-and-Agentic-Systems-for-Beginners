@@ -1,0 +1,26 @@
+from flask import Flask, jsonify, request
+from flask_cors import CORS
+
+app = Flask(__name__)
+CORS(app)
+
+# Example structure of the todos list:
+# todos = [
+#     {"id": 1, "title": "Buy groceries", "completed": False},
+#     {"id": 2, "title": "Learn Flask", "completed": True},
+#     {"id": 3, "title": "Exercise", "completed": False}
+# ]
+
+todos = []
+next_id = 1
+
+# Assignment Skeleton: Implement the following endpoints
+# 1. GET     /todos           -> Return all todos
+# 2. GET     /todos/<id>      -> Return a specific todo
+# 3. POST    /todos           -> Add a new todo
+# 4. PUT     /todos/<id>      -> Update a todo (title or completed)
+# 5. DELETE  /todos/<id>      -> Delete a specific todo
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
