@@ -1,0 +1,20 @@
+A smartphone is a mobile device that combines the functionality of a traditional mobile phone with advanced computing capabilities. 
+It typically has a touchscreen interface, allowing users to access a wide range of applications and services, such as web browsing, email, and social media, as well as multimedia playback and streaming. 
+Smartphones have built-in cameras, GPS navigation, and support for various communication methods, including voice calls, text messaging, and internet-based messaging apps. 
+Smartphones are distinguished from older-design feature phones by their more advanced hardware capabilities and extensive mobile operating systems, access to the internet, business applications, mobile payments, and multimedia functionality, including music, video, gaming, radio, and television.
+Smartphones have central processing units (CPUs), similar to those in computers, but optimised to operate in low power environments. 
+In smartphones, the CPU is typically integrated in a CMOS (complementary metal–oxide–semiconductor) system-on-a-chip (SoC) application processor.
+Smartphones are typically equipped with a power button and volume buttons. 
+Some pairs of volume buttons are unified. 
+Some are equipped with a dedicated camera shutter button.
+One of the main characteristics of smartphones is the screen. 
+Depending on the device's design, the screen fills most or nearly all of the space on a device's front surface. 
+Smartphones are equipped with a multitude of sensors to enable system features and third-party applications. 
+Accelerometers and gyroscopes enable automatic control of screen rotation. 
+Uses by third-party software include bubble level simulation. 
+An ambient light sensor allows for automatic screen brightness and contrast adjustment, and an RGB sensor enables the adaption of screen colour.
+Smartphones typically feature lithium-ion or lithium-polymer batteries due to their high energy densities. 
+Batteries chemically wear down as a result of repeated charging and discharging throughout ordinary usage, losing both energy capacity and output power, which results in loss of processing speeds followed by system outages. 
+Battery capacity may be reduced to 80% after few hundred recharges, and the drop in performance accelerates with time. 
+Some mobile phones are designed with batteries that can be interchanged upon expiration by the end user, usually by opening the back cover. 
+While such a design had initially been used in most mobile phones, including those with touch screen that were not Apple iPhones, it has largely been usurped throughout the 2010s by permanently built-in, non-replaceable batteries; a design practice criticized for planned obsolescence.
