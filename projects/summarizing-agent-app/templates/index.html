@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PDF Summarization Agent</title>
+<style>
+body { font-family: Arial, sans-serif; background: #f6f8fa; padding: 20px; }
+h1 { color: #333; }
+form { margin-bottom: 30px; }
+button { background: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+button:hover { background: #45a049; }
+.summary-box { background: white; padding: 20px; border-radius: 8px; margin-top: 20px; }
+.summary-box h2 { margin-top: 0; }
+.summary-text { white-space: pre-wrap; color: #444; margin-bottom: 10px; }
+</style>
+</head>
+<body>
+<h1>PDF Summarization Agent</h1>
+<form method="POST" enctype="multipart/form-data">
+    <input type="file" name="pdf_file" accept=".pdf" required>
+    <button type="submit">Summarize PDF</button>
+</form>
+
+{% if topics %}
+<div class="summary-box">
+    <h2>Detected Topics:</h2>
+    <ul>
+    {% for topic in topics %}
+        <li>{{ topic }}</li>
+    {% endfor %}
+    </ul>
+</div>
+
+<div class="summary-box">
+    <h2>Short Summaries by Topic:</h2>
+    {% for topic, summary in short_summaries.items() %}
+        <strong>{{ topic }}:</strong>
+        <div class="summary-text">{{ summary }}</div>
+    {% endfor %}
+</div>
+
+<div class="summary-box">
+    <h2>Detailed Summaries by Topic:</h2>
+    {% for topic, summary in detailed_summaries.items() %}
+        <strong>{{ topic }}:</strong>
+        <div class="summary-text">{{ summary }}</div>
+    {% endfor %}
+</div>
+
+<div class="summary-box">
+    <h2>Final Aggregated Summary:</h2>
+    <div class="summary-text">{{ final_summary }}</div>
+</div>
+{% endif %}
+</body>
+</html>

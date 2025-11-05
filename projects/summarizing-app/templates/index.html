@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BART Summarizer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f6f8fa;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      margin-top: 40px;
+      color: #333;
+    }
+    form {
+      margin-top: 20px;
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    textarea {
+      width: 100%;
+      height: 200px;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      resize: vertical;
+    }
+    button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background: #45a049;
+    }
+    .summary-box {
+      width: 70%;
+      margin-top: 30px;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .summary-box h2 {
+      margin-top: 0;
+      color: #333;
+    }
+    .summary-text {
+      white-space: pre-wrap;
+      font-size: 16px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <h1>BART Text Summarizer</h1>
+
+  <form method="POST">
+    <textarea name="text" placeholder="Paste your long text here..." required>{{ request.form.get('text', '') }}</textarea>
+    <button type="submit">Summarize</button>
+  </form>
+
+  {% if summary %}
+  <div class="summary-box">
+    <h2>Summary:</h2>
+    <div class="summary-text">{{ summary }}</div>
+  </div>
+  {% endif %}
+</body>
+</html>
